@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let p1 = new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                console.log("Not reesolved yet");
+                resolve("hurray")
+            },2000)
+        })
+
+        p1.then((value)=>{
+            console.log(value);
+        })
+        
+        p1.then(()=>{
+            console.log("value is resolved");
+        })
+    </script>
+    
+</body>
+</html>

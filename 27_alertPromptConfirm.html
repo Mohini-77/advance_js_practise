@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Alert Confirm</title>
+</head>
+<body>
+    <script>
+        alert("Hi Good morning")
+        let a=prompt("Enter a num","567")  //567 is defalut
+        a=Number.parseInt(a)
+        alert("type of a is " + (typeof a))
+        // document.write(a)          //will print on screen
+        let b= confirm("Click ok or cancle")
+        if(b)
+            document.write("You clicked ok")
+        else
+            document.write("You clicked cancle")
+    </script>
+</body>
+</html> 

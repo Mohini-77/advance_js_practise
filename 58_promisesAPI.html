@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let p1 = new Promise((resolve,reject)=>{
+            setTimeout(() => {
+                resolve("value 1");
+            }, 4000);
+        })
+
+        let p2 = new Promise((resolve,reject)=>{
+            setTimeout(() => {
+                // resolve("value 2");
+                reject(new Error("Error"));
+            }, 2000);
+        })
+
+        let p3 = new Promise((resolve,reject)=>{
+            setTimeout(() => {
+                resolve("value 3");
+            }, 3000);
+        })
+
+        // i want to get data after all promises are resolved
+        // let promiseAll = Promise.all([p1,p2,p3])
+
+        // if error is there then Promise.all will not work then,
+        let promiseAll = Promise.allSettled([p1,p2,p3])
+
+        // give which promise is executed first
+        // let promiseAll = Promise.race([p1,p2,p3])
+
+        // if error is there for fastest executed promise then it will show error,so want resolved fastest.
+        // let promiseAll = Promise.any([p1,p2,p3])
+
+
+        // let promiseAll = Promise.resolve(6)
+        // let promiseAll = Promise.reject(new Error("Error "))
+        promiseAll.then((value)=>{
+            console.log(value);
+        })
+        
+        
+        
+
+    </script>
+</body>
+</html>

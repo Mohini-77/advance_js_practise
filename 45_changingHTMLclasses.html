@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .black{
+            background-color: black;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="black">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+    <div class="yellow presemt">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+    
+    <script>
+        let a = document.querySelector(".black")
+        a.className = "yellow"
+        let b = document.querySelector(".yellow")
+        b.classList.remove("yellow")
+    </script>
+
+</body>
+</html>

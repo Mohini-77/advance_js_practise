@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        nav ul{
+            display: flex;
+            background-color: antiquewhite;
+            height: 10vh;
+            align-items: center;
+            justify-content: space-around;
+        }
+        nav li{
+            list-style: none;
+            padding: 3px 25px;
+            border: 2px solid rebeccapurple;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Blog</li>
+            <li>Conatct Us</li>
+        </ul>
+    </nav>
+    <script>
+        document.getElementsByTagName("nav")[0].firstElementChild.firstElementChild.style.color = "red"
+        document.getElementsByTagName("nav")[0].firstElementChild.firstElementChild.style.color = "green"
+        document.getElementsByTagName("nav")[0].firstElementChild.lastElementChild.style.color = "green"
+
+        let a = document.getElementsByTagName("ul")
+        Array.from(a).forEach((elem) =>{
+            elem.style.background = "cyan"
+        })
+    </script>
+</body>
+</html> 

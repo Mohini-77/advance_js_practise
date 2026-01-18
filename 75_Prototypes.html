@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = {
+            name: 'ritesh',
+            value: false,
+            run: () => {
+                console.log("Self run")
+            }
+
+        } 
+        
+        let b = {
+            name:'b',
+            run: () => {
+                console.log("run")
+            }
+        }
+        
+        a.__proto__ = b     // b ka function a chala skta he
+
+
+        a.run()
+        b.run()
+
+    </script>
+</body>
+
+</html>

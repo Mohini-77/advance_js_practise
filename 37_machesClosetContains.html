@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="box" id="id1">this is me
+        <span id="sp1">span</span>
+    </div>
+    <div class="box" id="id2">this is me too</div>
+    
+    <script>
+        let id1 = document.querySelector("#id1")
+        console.log(id1.matches(".class"))
+        console.log(id1.matches(".box"))
+
+        
+        console.log(sp1.closest(".box"))
+    </script>
+</body>
+</html>

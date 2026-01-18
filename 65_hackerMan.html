@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: green;
+            background-color: black;
+        }
+        button{
+            display: none;
+            color: greenyellow;
+            background-color: #393939;
+            outline: none;
+            border: 2px solid green;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="id1"></div>
+    <button id="ok">ok</button>
+    <script>
+        const hack = async () => {
+            let p1 = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve("Hacking start!")
+                }, 1000);
+            })
+            let p2 = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve("Hacking Instagram of Ritesh Mali...")
+                }, 3000);
+            })
+            let p3 = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve("Username Found to be Ritya_mali_143")
+                }, 5000);
+            })
+            let p4 = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve("Insta hacked, to Continue further press ok")
+                }, 8000);
+            })
+
+            // document.write("Waiting for connection...");
+            let h1 = await p1
+            // document.write(h1);
+            id1.innerHTML = id1.innerHTML + h1 + "<br>"
+            
+            let h2 = await p2
+            // document.write(h2);
+            id1.innerHTML = id1.innerHTML + h2 + "<br>"
+            
+            let h3 = await p3
+            // document.write(h3); 
+            id1.innerHTML = id1.innerHTML + h3 + "<br>"
+            
+            let h4 = await p4
+            // document.write(h4);
+            id1.innerHTML = id1.innerHTML + h4 + "<br>"
+
+            document.querySelector("#ok").style.display = "block"
+
+        }
+
+        hack()
+
+    </script>
+</body>
+
+</html>

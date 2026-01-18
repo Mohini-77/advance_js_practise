@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Mycars {
+            constructor(name, number) {
+                this.name = name
+                this.number = number
+            }
+
+            book() {
+                console.log(" You booked " + this.name + " car");
+            }
+
+            model() {
+                console.log("Car model is " + this.number );
+            }
+        }
+
+        let ritesh = new Mycars("Polo", 123)
+        ritesh.book()
+        ritesh.model()
+    </script>
+</body>
+
+</html>

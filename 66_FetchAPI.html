@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const apiKey = '980412ab42ba8c30dce52b2003a439c0'
+        const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?units=metric&q=delhi'
+
+        console.time('Fetching')
+        const p = fetch(apiUrl + `&appid=${apiKey}`);
+        console.timeEnd('Fetching')
+
+        p.then((responce)=>{
+            console.log(responce.status);
+            console.log(responce.ok);
+            return responce.json()
+        }).then((data)=>{
+            console.log(data);
+        })
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bulb{
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+        }
+        .bulb-container{
+            background-color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <!-- q1 -->
+    <button onclick="alert('hey')">hey</button>
+    <button onclick="alert('bye')">bye</button>
+    <!-- q2 -->
+    <h1>Bookmarks</h1>
+    <a href="https://google.com"><button>Google</button></a>
+    <a href="https://fb.com"><button>Facebook</button></a>
+
+    <!-- bulb effect -->
+    <div id="bulb1" class="bulb bulb-container"></div>
+
+    <script>
+        let a = document.getElementById("bulb1")
+        setInterval(async function(){
+            a.classList.toggle("bulb-container")
+        },300)
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        class railwayForm{
+            submit(){
+                console.log(this.name + " : This form is submitted");
+            }
+            cancel(){
+                console.log(this.name +" : This form is cancelled");
+            }
+            fill(value){
+                this.name = value
+            }
+        }
+
+        let p1 = new railwayForm()
+        let p2 = new railwayForm()
+
+        p1.fill("Ritesh")
+        p2.fill("Rushi")
+
+        p1.submit()
+        p1.cancel()
+        p2.submit()
+        p2.cancel()
+
+    </script>
+    
+</body>
+</html>
