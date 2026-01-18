@@ -9,7 +9,7 @@ switch(a){
         console.log("ok");  
         break;
  
-    case "Ritesh":
+    case "Mohini":
         console.log("It is a name");
         break;
 
