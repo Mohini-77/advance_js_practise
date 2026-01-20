@@ -8,7 +8,7 @@ console.log(a);
 
 console.log("var declaraton")
 
-let b="mohini"
+let b="mohini-----"
 console.log(b)                             //mohini
  b=5
 console.log(b)                             //6
